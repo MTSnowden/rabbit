@@ -1,4 +1,5 @@
 import Hero from '../components/Layout/Hero'
+import FeatureSection from '../components/Products/FeatureSection'
 import FeaturedCollection from '../components/Products/FeaturedCollection'
 import GenderCollectionSection from '../components/Products/GenderCollectionSection'
 import NewArrivals from '../components/Products/NewArrivals'
@@ -77,6 +78,7 @@ const Home = () => {
         </div>
 
         <FeaturedCollection />
+        <FeatureSection />
     </div>
    
   )
