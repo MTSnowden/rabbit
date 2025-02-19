@@ -123,8 +123,8 @@ const FilterSidebar = () => {
                 <label className="block text-gray-600 font-medium mb-2">Color</label>
                 <div className="flex flex-wrap gap-2">
                     {colors.map((color) => (
-                        <button key={color} name="color" value={color} onChange={handleFilterChange} className="w-8 h-8 rounded-full border border-gray-300 cusor-pointer transition hover:scale-105"
-                                style={{backgroundColor: color.toLowerCase}}></button>
+                        <button key={color} name="color" value={color} onClick={handleFilterChange} className="w-8 h-8 rounded-full border border-gray-300 cusor-pointer transition hover:scale-105"
+                                style={{backgroundColor: color.toLowerCase()}}></button>
                     ))}
                 </div>
             </div>
