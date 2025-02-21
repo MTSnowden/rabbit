@@ -12,7 +12,7 @@ const CollectionPage = () => {
 
     const sidebarRef = useRef(null)
 
-    const[isSidebarOpen, setIsSidebarOpen] = useState(false)
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -20,9 +20,9 @@ const CollectionPage = () => {
 
     const handleClickOutside = (e) => {
         if(sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-        setIsSidebarOpen(false)
+        setIsSidebarOpen(false);
         }
-    }
+    };
 
     useEffect(() => {
         // Add Event Listener for Clicks
